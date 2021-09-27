@@ -18,10 +18,10 @@ class AuthForm extends Component {
     this.props
       .onAuth(authType, this.state)
       .then(() => {
-        this.props.history.push("/");
+        this.props.history.push("/"); // redirect back to homepage /
       })
       .catch(() => {
-        return;
+        return; // return and then error message should display
       });
   };
 

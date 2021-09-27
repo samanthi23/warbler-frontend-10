@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MessageTimeline from "./MessageTimeline";
 
-const Homepage = ({ currentUser }) => {
-  if (!currentUser.isAuthenticated) {
+const Homepage = ({ currentUser }) => { // destructure currentUser from props
+  if (!currentUser.isAuthenticated) { // code to run if user is not logged in
     return (
       <div className="home-hero">
         <h1>What's Happening?</h1>
@@ -14,6 +14,7 @@ const Homepage = ({ currentUser }) => {
       </div>
     );
   }
+  // if user is authenticated then run this code
   return (
     <div>
       <h1>YOU MADE IT!</h1>
