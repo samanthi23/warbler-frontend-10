@@ -110,14 +110,5 @@ class AuthForm extends Component {
     );
   }
 }
-AuthForm.propTypes = {
-  buttonText: PropTypes.string,
-  errors: PropTypes.object,
-  heading: PropTypes.string,
-  history: PropTypes.object,
-  onAuth: PropTypes.func,
-  signIn: PropTypes.bool,
-  removeError: PropTypes.func
-};
 
 export default AuthForm;
